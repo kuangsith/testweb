@@ -6,7 +6,7 @@ import numpy
 df = pd.DataFrame(columns = ['Age','Income'])
 
 for i in range(20):
-  df = df.append({'Age': random.randint(15,60),'Income':10000+40000*random.random()},ignore_index=True)
+  df.loc[len(df)] = [random.randint(15, 60), 10000 + 40000 * random.random()]
 
 with st.expander("Section 1"):
   st.dataframe(df)
