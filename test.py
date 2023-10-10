@@ -1,6 +1,5 @@
 import pandas as pd
 import datetime
-import get_price_binanace
 import streamlit as st
 import numpy
 
@@ -11,3 +10,6 @@ for i in range(20):
 
 with st.expander("Section 1"):
   st.dataframe(df)
+
+
+st.scatter()
