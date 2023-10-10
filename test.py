@@ -14,4 +14,4 @@ with st.expander("Section 1"):
   st.dataframe(df)
 
 
-st.scatter_chart(df,x='Age',y'Income')
+st.scatter_chart(df,x='Age',y='Income')
