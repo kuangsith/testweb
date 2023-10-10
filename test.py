@@ -12,4 +12,4 @@ with st.expander("Section 1"):
   st.dataframe(df)
 
 
-st.scatter()
+st.scatter(x=df['Age'],y=df['Income'])
