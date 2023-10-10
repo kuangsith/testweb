@@ -10,7 +10,7 @@ import numpy
 
 df = pd.read_csv('yoyo.csv')
 
-with st.expander("Section 1"):
+with st.expander("Click to see DF"):
   st.dataframe(df)
 
 
