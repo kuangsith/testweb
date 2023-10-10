@@ -8,7 +8,7 @@ import numpy
 # for i in range(20):
 #   df.loc[len(df)] = [random.randint(15, 60), 10000 + 40000 * random.random()]
 
-df = pd.read_csv('yoyo.csv',index=True)
+df = pd.read_csv('yoyo.csv')
 
 with st.expander("Section 1"):
   st.dataframe(df)
