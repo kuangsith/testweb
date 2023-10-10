@@ -9,6 +9,7 @@ import numpy
 #   df.loc[len(df)] = [random.randint(15, 60), 10000 + 40000 * random.random()]
 
 df = pd.read_csv('yoyo.csv')
+df['Income'] = df['Income'].apply(lambda x: round(x,2))
 
 with st.expander("Click to see DF"):
   st.dataframe(df)
